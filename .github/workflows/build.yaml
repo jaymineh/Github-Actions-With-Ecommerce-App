@@ -28,19 +28,19 @@ jobs:
       # Build the backend
       - name: Install backend dependencies
         run: npm install
-        working-directory: api
+        working-directory: backend
 
       # Build the frontend
       - name: Install frontend dependencies
         run: npm install
-        working-directory: app/frontend
+        working-directory: frontend/frontend
 
     #   Run backend test
       - name: Run backend tests
         run: npm test
-        working-directory: api
+        working-directory: backend
 
     #   Run frontend test
       - name: Run frontend tests
         run: npm test
-        working-directory: app/frontend
+        working-directory: frontend/frontend
