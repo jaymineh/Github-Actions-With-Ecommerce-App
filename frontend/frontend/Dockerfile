@@ -1,6 +1,7 @@
 # Use an official Node.js runtime as a parent image
 FROM node:14 as build
 
+# env
 ARG REACT_APP_API_URL
 ENV REACT_APP_API_URL $REACT_APP_API_URL
 
